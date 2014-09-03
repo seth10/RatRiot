@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D576FCF19B6C2D80092F052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D576FCE19B6C2D80092F052 /* AppDelegate.swift */; };
+		5D576FD119B6C2D80092F052 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D576FD019B6C2D80092F052 /* GameScene.sks */; };
+		5D576FD319B6C2D80092F052 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D576FD219B6C2D80092F052 /* GameScene.swift */; };
+		5D576FD519B6C2D80092F052 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D576FD419B6C2D80092F052 /* GameViewController.swift */; };
+		5D576FD819B6C2D80092F052 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D576FD619B6C2D80092F052 /* Main.storyboard */; };
+		5D576FDA19B6C2D80092F052 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D576FD919B6C2D80092F052 /* Images.xcassets */; };
+		5D576FE619B6C2D90092F052 /* RatRiotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D576FE519B6C2D90092F052 /* RatRiotTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D576FE019B6C2D90092F052 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D576FC119B6C2D80092F052 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D576FC819B6C2D80092F052;
+			remoteInfo = RatRiot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5D576FC919B6C2D80092F052 /* RatRiot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RatRiot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D576FCD19B6C2D80092F052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D576FCE19B6C2D80092F052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5D576FD019B6C2D80092F052 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		5D576FD219B6C2D80092F052 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		5D576FD419B6C2D80092F052 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		5D576FD719B6C2D80092F052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D576FD919B6C2D80092F052 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5D576FDF19B6C2D90092F052 /* RatRiotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RatRiotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D576FE419B6C2D90092F052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D576FE519B6C2D90092F052 /* RatRiotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatRiotTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D576FC619B6C2D80092F052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D576FDC19B6C2D90092F052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D576FC019B6C2D80092F052 = {
+			isa = PBXGroup;
+			children = (
+				5D576FCB19B6C2D80092F052 /* RatRiot */,
+				5D576FE219B6C2D90092F052 /* RatRiotTests */,
+				5D576FCA19B6C2D80092F052 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D576FCA19B6C2D80092F052 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D576FC919B6C2D80092F052 /* RatRiot.app */,
+				5D576FDF19B6C2D90092F052 /* RatRiotTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D576FCB19B6C2D80092F052 /* RatRiot */ = {
+			isa = PBXGroup;
+			children = (
+				5D576FCE19B6C2D80092F052 /* AppDelegate.swift */,
+				5D576FD019B6C2D80092F052 /* GameScene.sks */,
+				5D576FD219B6C2D80092F052 /* GameScene.swift */,
+				5D576FD419B6C2D80092F052 /* GameViewController.swift */,
+				5D576FD619B6C2D80092F052 /* Main.storyboard */,
+				5D576FD919B6C2D80092F052 /* Images.xcassets */,
+				5D576FCC19B6C2D80092F052 /* Supporting Files */,
+			);
+			path = RatRiot;
+			sourceTree = "<group>";
+		};
+		5D576FCC19B6C2D80092F052 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D576FCD19B6C2D80092F052 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D576FE219B6C2D90092F052 /* RatRiotTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D576FE519B6C2D90092F052 /* RatRiotTests.swift */,
+				5D576FE319B6C2D90092F052 /* Supporting Files */,
+			);
+			path = RatRiotTests;
+			sourceTree = "<group>";
+		};
+		5D576FE319B6C2D90092F052 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D576FE419B6C2D90092F052 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D576FC819B6C2D80092F052 /* RatRiot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D576FE919B6C2D90092F052 /* Build configuration list for PBXNativeTarget "RatRiot" */;
+			buildPhases = (
+				5D576FC519B6C2D80092F052 /* Sources */,
+				5D576FC619B6C2D80092F052 /* Frameworks */,
+				5D576FC719B6C2D80092F052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RatRiot;
+			productName = RatRiot;
+			productReference = 5D576FC919B6C2D80092F052 /* RatRiot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D576FDE19B6C2D90092F052 /* RatRiotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D576FEC19B6C2D90092F052 /* Build configuration list for PBXNativeTarget "RatRiotTests" */;
+			buildPhases = (
+				5D576FDB19B6C2D90092F052 /* Sources */,
+				5D576FDC19B6C2D90092F052 /* Frameworks */,
+				5D576FDD19B6C2D90092F052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D576FE119B6C2D90092F052 /* PBXTargetDependency */,
+			);
+			name = RatRiotTests;
+			productName = RatRiotTests;
+			productReference = 5D576FDF19B6C2D90092F052 /* RatRiotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D576FC119B6C2D80092F052 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Serious Thought";
+				TargetAttributes = {
+					5D576FC819B6C2D80092F052 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					5D576FDE19B6C2D90092F052 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 5D576FC819B6C2D80092F052;
+					};
+				};
+			};
+			buildConfigurationList = 5D576FC419B6C2D80092F052 /* Build configuration list for PBXProject "RatRiot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D576FC019B6C2D80092F052;
+			productRefGroup = 5D576FCA19B6C2D80092F052 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D576FC819B6C2D80092F052 /* RatRiot */,
+				5D576FDE19B6C2D90092F052 /* RatRiotTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D576FC719B6C2D80092F052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D576FDA19B6C2D80092F052 /* Images.xcassets in Resources */,
+				5D576FD119B6C2D80092F052 /* GameScene.sks in Resources */,
+				5D576FD819B6C2D80092F052 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D576FDD19B6C2D90092F052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D576FC519B6C2D80092F052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D576FD319B6C2D80092F052 /* GameScene.swift in Sources */,
+				5D576FD519B6C2D80092F052 /* GameViewController.swift in Sources */,
+				5D576FCF19B6C2D80092F052 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D576FDB19B6C2D90092F052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D576FE619B6C2D90092F052 /* RatRiotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D576FE119B6C2D90092F052 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D576FC819B6C2D80092F052 /* RatRiot */;
+			targetProxy = 5D576FE019B6C2D90092F052 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5D576FD619B6C2D80092F052 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D576FD719B6C2D80092F052 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D576FE719B6C2D90092F052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5D576FE819B6C2D90092F052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D576FEA19B6C2D90092F052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = RatRiot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5D576FEB19B6C2D90092F052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = RatRiot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5D576FED19B6C2D90092F052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RatRiotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RatRiot.app/RatRiot";
+			};
+			name = Debug;
+		};
+		5D576FEE19B6C2D90092F052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RatRiotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RatRiot.app/RatRiot";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D576FC419B6C2D80092F052 /* Build configuration list for PBXProject "RatRiot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D576FE719B6C2D90092F052 /* Debug */,
+				5D576FE819B6C2D90092F052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D576FE919B6C2D90092F052 /* Build configuration list for PBXNativeTarget "RatRiot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D576FEA19B6C2D90092F052 /* Debug */,
+				5D576FEB19B6C2D90092F052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5D576FEC19B6C2D90092F052 /* Build configuration list for PBXNativeTarget "RatRiotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D576FED19B6C2D90092F052 /* Debug */,
+				5D576FEE19B6C2D90092F052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D576FC119B6C2D80092F052 /* Project object */;
+}
