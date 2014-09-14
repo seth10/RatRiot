@@ -31,12 +31,13 @@ class Level {
     }
     
     func addBorders() {
-        for column in 0..<NumColumns+1 {
-            for row in 0..<NumRows+1 {
-                if bordersJSON[column, row] != 0  {
-                    let border = Border(column: column, row: row, orientation: ( bordersJSON[column, row]==1 ? BorderOrientation.Horizontal : BorderOrientation.Vertical ))
-                    borders[column, row] = border
-                }
+        for column in 0..<NumColumns + 1 {
+            for row in 0..<NumRows + 1 {
+//                if bordersJSON[column, row] != 0  {
+//      
+//                    let border = Border(column: column, row: row, walls: Walls.fromRaw(bordersJSON[column, row]!)!)
+//                    borders[column, row] = border
+//                }
             }
         }
     }
@@ -48,24 +49,20 @@ class Level {
     }
     
     init(filename: String) {
-        if let dictionary = Dictionary<String, AnyObject>.loadJSONFromBundle(filename) {
-            if let gridArray: AnyObject = dictionary["grid"] {
-                for (row, rowArray) in enumerate(gridArray as [[Int]]) {
-                    let tileRow = NumRows - row - 1
-                    for (column, value) in enumerate(rowArray) {
-                        gridJSON[column, tileRow] = value
-                    }
-                }
+        
+        let path = NSBundle(forClass: Level.self).pathForResource("Level_0", ofType: "json")
+        let string = NSString.stringWithContentsOfFile(path!, encoding: NSUTF8StringEncoding, error: nil)
+        let json = JSON.parse(string)
+        
+        if let level = json.value {
+            if let grid = level["grid"].array {
+                println(grid)
             }
-            if let bordersArray: AnyObject = dictionary["borders"] {
-                for (row, rowArray) in enumerate(bordersArray as [[Int]]) {
-                    let tileRow = NumRows + 1 - row - 1
-                    for (column, value) in enumerate(rowArray) {
-                        bordersJSON[column, tileRow] = value
-                    }
-                }
+            if let walls = level["walls"].array {
+                println(walls)
             }
         }
+        
     }
     
 }

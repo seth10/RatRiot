@@ -56,28 +56,28 @@ class GameScene: SKScene {
 //            x: -TileWidth  * CGFloat(NumColumns) / 2,
 //            y: -TileHeight * CGFloat(NumRows)    / 2)
         let borderPosition = CGPoint(
-            x: -300,
-            y: -176)
+            x: -284,
+            y: -160)
         
         borderLayer.position = borderPosition
         gameLayer.addChild(borderLayer)
     }
     
-    override func update(currentTime: CFTimeInterval) {
-        /* Called before each frame is rendered */
-        if lastTick == nil {
-            return
-        }
-        var timePassed = lastTick!.timeIntervalSinceNow * -1000.0
-        if timePassed > tickLengthMillis {
-            lastTick = NSDate.date()
-            tick?()
-        }
-    }
+//    override func update(currentTime: CFTimeInterval) {
+//        /* Called before each frame is rendered */
+//        if lastTick == nil {
+//            return
+//        }
+//        var timePassed = lastTick!.timeIntervalSinceNow * -1000.0
+//        if timePassed > tickLengthMillis {
+//            lastTick = NSDate.date()
+//            tick?()
+//        }
+//    }
     
-    func startTicking() {
-        lastTick = NSDate.date()
-    }
+//    func startTicking() {
+//        lastTick = NSDate.date()
+//    }
     
     func stopTicking() {
         lastTick = nil
@@ -87,7 +87,7 @@ class GameScene: SKScene {
         for column in 0..<NumColumns {
             for row in 0..<NumRows {
                 if let gridObject = level.grid[column, row] {
-                    let sprite = SKSpriteNode(imageNamed: gridObject.spriteName)
+                    let sprite = SKSpriteNode(imageNamed: gridObject.spriteName!)
                     sprite.position = pointForColumn(column, row:row)
                     gridLayer.addChild(sprite)
                     gridObject.sprite = sprite
@@ -97,8 +97,8 @@ class GameScene: SKScene {
     }
     
     func addSpritesForBorders() {
-        for column in 0..<NumColumns+1 {
-            for row in 0..<NumRows+1 {
+        for column in 0..<NumColumns + 1 {
+            for row in 0..<NumRows + 1 {
                 if let border = level.borders[column, row] {
                     let sprite = SKSpriteNode(imageNamed: border.spriteName)
                     sprite.position = pointForColumn(column, row:row)

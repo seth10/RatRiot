@@ -46,7 +46,7 @@ class GameViewController: UIViewController {
         beginGame()
         
         scene.tick = ratAction
-        scene.startTicking()
+//        scene.startTicking()
     }
     
     func beginGame() {
