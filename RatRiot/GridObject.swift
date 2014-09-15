@@ -8,15 +8,6 @@
 
 import SpriteKit
 
-//protocol GridObject {
-//    
-//    //must have a column and row?
-//    var spriteName: String { get }
-//    //want this to be a let
-//    var sprite: SKSpriteNode? { get set }
-//    
-//}
-
 class GridObject {
     
     var column: Int

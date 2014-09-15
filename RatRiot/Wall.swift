@@ -8,14 +8,14 @@
 
 import SpriteKit
 
-enum Wall: Int, Printable {
+enum WallType: Int, Printable {
     
     case North = 1,
          East  = 2,
          South = 4,
          West  = 8
     
-    static let allValues: [Wall] = [.North, .East, .South, .West]
+    static let allValues: [WallType] = [.North, .East, .South, .West]
     
     var wallsName: String {
         let wallNames = [ "North",
@@ -33,21 +33,17 @@ enum Wall: Int, Printable {
     
 }
 
-class Border: Printable {
+class Wall: Printable {
     
     var column: Int
     var row: Int
-    let walls: [Wall]
-    var spriteName: String
-    //can I make this a let even though in the protocol its a var?
-    var sprite: SKSpriteNode?
-    //why a var?
+    let walls: [WallType]
+
     
-    init(column: Int, row: Int, walls: [Wall]) {
+    init(column: Int, row: Int, walls: [WallType]) {
         self.column = column
         self.row = row
         self.walls = walls
-        self.spriteName = "Border"
     }
     
     var description: String {

@@ -26,7 +26,7 @@ class GameViewController: UIViewController {
         return Int(UIInterfaceOrientationMask.AllButUpsideDown.toRaw())
     }
     
-    override func viewDidLoad() {
+    override func viewDidLoad() {        
         super.viewDidLoad()
         
         // Configure the view.
@@ -37,7 +37,7 @@ class GameViewController: UIViewController {
         scene = GameScene(size: skView.bounds.size)
         scene.scaleMode = .AspectFill
         
-        level = Level(filename: "Level_1")
+        level = Level(filename: "Level_0")
         scene.level = level
         
         // Present the scene.
@@ -52,8 +52,8 @@ class GameViewController: UIViewController {
     func beginGame() {
         level.addRat()
         scene.addSpritesForGridObjects()
-        level.addBorders()
-        scene.addSpritesForBorders()
+        level.addWalls()
+        scene.addSpritesForWalls()
     }
     
     func ratAction() {

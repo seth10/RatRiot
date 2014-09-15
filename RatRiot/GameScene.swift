@@ -15,9 +15,9 @@ class GameScene: SKScene {
     let TileWidth:  CGFloat = 32.0
     let TileHeight: CGFloat = 32.0
     
-    let gameLayer   = SKNode()
-    let gridLayer   = SKNode()
-    let borderLayer = SKNode()
+    let gameLayer = SKNode()
+    let gridLayer = SKNode()
+    let wallLayer = SKNode()
 
     var tick:(() -> ())?
     var tickLengthMillis = NSTimeInterval(1000)
@@ -55,12 +55,12 @@ class GameScene: SKScene {
 //        let layerPosition = CGPoint(
 //            x: -TileWidth  * CGFloat(NumColumns) / 2,
 //            y: -TileHeight * CGFloat(NumRows)    / 2)
-        let borderPosition = CGPoint(
+        let wallPosition = CGPoint(
             x: -284,
             y: -160)
         
-        borderLayer.position = borderPosition
-        gameLayer.addChild(borderLayer)
+        wallLayer.position = wallPosition
+        gameLayer.addChild(wallLayer)
     }
     
 //    override func update(currentTime: CFTimeInterval) {
@@ -96,14 +96,14 @@ class GameScene: SKScene {
         }
     }
     
-    func addSpritesForBorders() {
+    func addSpritesForWalls() {
         for column in 0..<NumColumns + 1 {
             for row in 0..<NumRows + 1 {
-                if let border = level.borders[column, row] {
-                    let sprite = SKSpriteNode(imageNamed: border.spriteName)
-                    sprite.position = pointForColumn(column, row:row)
-                    borderLayer.addChild(sprite)
-                    border.sprite = sprite
+                if let walls = level.walls[column, row] {
+//                    let sprite = SKSpriteNode(imageNamed: wall.spriteName)
+//                    sprite.position = pointForColumn(column, row:row)
+//                    borderLayer.addChild(sprite)
+//                    border.sprite = sprite
                 }
             }
         }

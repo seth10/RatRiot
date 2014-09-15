@@ -13,11 +13,11 @@ let NumRows = 10
 
 class Level {
     
-    let grid    = Array2D<GridObject>(columns: NumColumns, rows: NumRows)
-    let borders = Array2D<Border>(columns: NumColumns+1, rows: NumRows+1)
+    let grid  = Array2D<GridObject>(columns: NumColumns, rows: NumRows)
+    let walls = Array2D<Wall>(columns: NumColumns+1, rows: NumRows+1)
     //borders is one larger than the grid and offset by one
     let gridJSON = Array2D<Int>(columns: NumColumns, rows: NumRows)
-    let bordersJSON = Array2D<Int>(columns: NumColumns+1, rows: NumRows+1)
+    let wallsJSON = Array2D<Int>(columns: NumColumns+1, rows: NumRows+1)
     
     func addRat() {
         for column in 0..<NumColumns {
@@ -30,7 +30,7 @@ class Level {
         }
     }
     
-    func addBorders() {
+    func addWalls() {
         for column in 0..<NumColumns + 1 {
             for row in 0..<NumRows + 1 {
 //                if bordersJSON[column, row] != 0  {
@@ -56,10 +56,31 @@ class Level {
         
         if let level = json.value {
             if let grid = level["grid"].array {
-                println(grid)
+//                println(grid)
             }
             if let walls = level["walls"].array {
-                println(walls)
+                println("a \(walls[0][0])")
+                for row in walls {
+                    println("b \(row[0])")
+//                    for col in 0..<row.length {
+//                        println(cell)
+//                    }
+                    var index = 0;
+                    while row[index]>=1 {
+                        println(row[index])
+                        index++
+                    }
+                }
+//                for row in walls as JSValue.JSArrayType {
+//                    let myRow: JSValue.JSBackingValue = .JSArray([row])
+//                    
+//                    println(myRow)
+//                    
+////                    for cell in row {
+////                        println(cell)
+////                    }
+//                }
+                //merge addWalls() here
             }
         }
         
